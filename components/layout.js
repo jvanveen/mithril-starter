@@ -8,16 +8,8 @@ export default {
                 m(m.route.Link, {href: "/users"}, "Users"),
                 m(m.route.Link, {href: "/products"}, "Products")
             ),
-            m('.wrapper',
-                m('aside', 'Aside'),
-                m('article.view',
-                    vnode.children, // e.g. the view
-                    m('button', {
-                        onclick: function() {
-                            global.app.state.count ++
-                        }
-                    }, `Click me ${global.app.state.count}`),
-                )
+            m('article.view',
+                vnode.children,
             ),
             m('footer', 'Footer')
         ]

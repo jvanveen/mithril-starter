@@ -3,7 +3,7 @@ import m from 'mithril'
 export default {
     delUser(user) {
         const users = globalThis.app.state.users
-        users.splice(users.findIndex((u) => u.id === users.id), 1)
+        users.splice(users.findIndex((u) => u.id === user.id), 1)
     },
     view: function(vnode) {
         return (
