@@ -1,12 +1,47 @@
+$primary-color: rgb(20, 54, 54);
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: $primary-color;
+    --spacer: 8px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
 header {
-    background: #ff0;
-    font-family: cursive;
+    background: darken($primary-color, 10%);
+    color: #fff;
+    height: 40px;
+    display: flex;
+    a {
+        background: lighten($primary-color, 10%);
+        color: #fff;
+        padding: var(--spacer);
+    }
 }
 
 .wrapper {
     background: #0ff;
+    flex: 1;
 }
 
 footer {
-    background: #0f0;
+    background: darken($primary-color, 10%);
+}
+
+.user {
+    background: rgb(20, 54, 54);
+    color: #fff;
 }

@@ -20,6 +20,7 @@ const stateHandler = {
     set: function(obj, prop, value) {
         obj[prop] = value
         m.redraw()
+        return true
     }
 };
 
